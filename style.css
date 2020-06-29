@@ -1,5 +1,10 @@
 /* Child elements will inherit from the parent, unless explicitly overridden. Body is basically a global styler. */
 /* the asterisk is the real universal selector */
+
+
+/* ================================================================= */
+/* GLOBAL ATTRIBUTES */
+/* ================================================================= */
 *{
     margin: 0;
     padding: 0;
@@ -12,11 +17,14 @@
     clear: both;
 }
 
+/* ================================================================= */
+/* HEADERS */
+/* ================================================================= */
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
-
 
 h1, h2 {
     color: rgb(31, 31, 31);   
@@ -32,18 +40,9 @@ h2{
     margin-bottom: 10px;    
 }
 
-.mainText {
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-/* id can only be used once. use a class for more flexibility */
-.authorText{
-    font-size: 22px;
-    float: left;
-    margin-top: 30px;
-    margin-left: 15px;
-}
+/* ====================================================== */
+/* INSIDE THE CONTAINER */
+/* ====================================================== */
 
 /* outer <div> element containing everything in the body */
 .container{
@@ -51,33 +50,64 @@ h2{
     /* top right bottom left : order of margins */
     margin:  20px auto 0 auto;
 }
-/* float is used to position a div element in a specific area */
+
+/* ====================================================== */
+    /* TEXT ELEMENTS */
+/* ====================================================== */
+
 .blogPost{
     width: 75%;
     float: left;
-    padding-right: 30px;    
+    padding-right: 30px;
+    position: relative;    
 }
-.otherPosts{
-    width: 25%;
-    float: left;
-}
-.authorBox{
-    /* to create a line dividing the p text and the author image */
-    border-top: 1px solid grey;
-    padding-top: 20px;
-}
-.other{
-    margin-bottom: 40px;
-}
+        .date{
+            position: absolute;
+        }
+            
+        .mainText {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
 
-.authorBox img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    float: left;
-}
+        .otherPosts{
+            width: 25%;
+            float: left;
+        }
 
-.blogPost img{
-    height: 150px;
-    width: auto;
-}
+                .other{
+                    margin-bottom: 40px;
+                }
+
+        .authorBox{
+            /* to create a line dividing the p text and the author image*/
+            border-top: 1px solid grey;
+            padding-top: 20px;
+        }    
+        
+                .authorText{
+                    font-size: 22px;
+                    float: left;
+                    margin-top: 30px;
+                    margin-left: 15px;
+                }
+   
+/* ====================================================== *//* IMAGES */
+/* ====================================================== */
+
+        .authorBox img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .blogPost img{
+            height: 150px;
+            width: auto;
+        }
+
+/* ====================================================== */
+
+/* ====================================================== */
+
