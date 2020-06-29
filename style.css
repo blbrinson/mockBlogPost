@@ -18,7 +18,12 @@ h2{
     font-size: 25px;    
 }
 
-p{
-    text-align: justify;    
+.mainText {
+    text-align: justify;
+}
+
+/* id can only be used once. use a class for more flexibility */
+.authorText{
+    font-size: 22px;
 }
 
