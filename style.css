@@ -40,6 +40,9 @@ h2{
 /* id can only be used once. use a class for more flexibility */
 .authorText{
     font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 15px;
 }
 
 /* outer <div> element containing everything in the body */
@@ -62,4 +65,19 @@ h2{
     /* to create a line dividing the p text and the author image */
     border-top: 1px solid grey;
     padding-top: 20px;
+}
+.other{
+    margin-bottom: 40px;
+}
+
+.authorBox img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+.blogPost img{
+    height: 150px;
+    width: auto;
 }
