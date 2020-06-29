@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* to clear the float */
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -35,3 +42,24 @@ h2{
     font-size: 22px;
 }
 
+/* outer <div> element containing everything in the body */
+.container{
+    width: 1140px;
+    /* top right bottom left : order of margins */
+    margin:  20px auto 0 auto;
+}
+/* float is used to position a div element in a specific area */
+.blogPost{
+    width: 75%;
+    float: left;
+    padding-right: 30px;    
+}
+.otherPosts{
+    width: 25%;
+    float: left;
+}
+.authorBox{
+    /* to create a line dividing the p text and the author image */
+    border-top: 1px solid grey;
+    padding-top: 20px;
+}
